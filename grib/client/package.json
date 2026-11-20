@@ -1,0 +1,28 @@
+{
+  "name": "grib-client",
+  "version": "0.1.0",
+  "description": "Гриб — клиент системы мониторинга (веб, desktop, Android)",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "web": "npx --yes http-server www -p 8080 -c-1",
+    "desktop": "electron .",
+    "desktop:build": "electron-builder --linux AppImage --win portable",
+    "android:init": "npx cap add android",
+    "android:sync": "npx cap sync android",
+    "android:open": "npx cap open android"
+  },
+  "build": {
+    "appId": "ru.grib.app",
+    "productName": "Гриб",
+    "files": ["electron/**", "www/**"],
+    "directories": { "output": "dist" }
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  }
+}

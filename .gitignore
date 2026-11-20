@@ -1,0 +1,11 @@
+backup/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.db
+*.db-shm
+*.db-wal
+node_modules/
+.env
+~$*.docx

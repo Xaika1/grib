@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+server/grib.db*
+demo/data/*.db*
+client/node_modules/
+client/dist/
+client/android/
+.env

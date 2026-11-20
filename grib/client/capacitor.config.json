@@ -1,0 +1,12 @@
+{
+  "appId": "ru.grib.app",
+  "appName": "Гриб",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}
